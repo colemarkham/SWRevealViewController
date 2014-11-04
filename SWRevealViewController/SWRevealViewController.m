@@ -836,6 +836,11 @@ const int FrontViewPositionNone = 0xff;
     [self setFrontViewPosition:toggledFrontViewPosition animated:animated];
 }
 
+- (BOOL)isRightViewVisible
+{
+    return _frontViewPosition < FrontViewPositionLeft;
+}
+
 
 - (void)setFrontViewPosition:(FrontViewPosition)frontViewPosition
 {

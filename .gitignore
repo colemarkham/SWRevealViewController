@@ -24,3 +24,6 @@ DerivedData
 
 # CocoaPods
 Pods
+
+# Eclispe Project
+/.project

@@ -216,6 +216,7 @@ typedef NS_ENUM(NSInteger, SWRevealToggleAnimationType)
 // Use setFrontViewPosition to set a particular position
 - (void)revealToggleAnimated:(BOOL)animated;
 - (void)rightRevealToggleAnimated:(BOOL)animated; // <-- simetric implementation of the above for the rightViewController
+- (BOOL)isRightViewVisible;
 
 // The following method will provide a panGestureRecognizer suitable to be added to any view
 // in order to perform usual drag and swipe gestures to reveal the rear views. This is usually added to the top bar
