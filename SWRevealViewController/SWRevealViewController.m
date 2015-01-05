@@ -36,12 +36,12 @@
 static CGFloat statusBarAdjustment( UIView* view )
 {
     CGFloat adjustment = 0.0f;
-    UIApplication *app = [UIApplication sharedApplication];
-    CGRect viewFrame = [view convertRect:view.bounds toView:[app keyWindow]];
-    CGRect statusBarFrame = [app statusBarFrame];
-    
-    if ( CGRectIntersectsRect(viewFrame, statusBarFrame) )
-        adjustment = fminf(statusBarFrame.size.width, statusBarFrame.size.height);
+//    UIApplication *app = [UIApplication sharedApplication];
+//    CGRect viewFrame = [view convertRect:view.bounds toView:[app keyWindow]];
+//    CGRect statusBarFrame = [app statusBarFrame];
+//    
+//    if ( CGRectIntersectsRect(viewFrame, statusBarFrame) )
+//        adjustment = fminf(statusBarFrame.size.width, statusBarFrame.size.height);
 
     return adjustment;
 }
